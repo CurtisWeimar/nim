@@ -1,0 +1,11 @@
+<<<<<<< HEAD
+/*
+I can comment here too
+*/
+=======
+img {
+    image-rendering: -moz-crisp-edges;
+    image-rendering: pixelated;
+    width: 200px;
+}
+>>>>>>> 2b7b72256b07737609cb90c509376c9b51c4a22c
