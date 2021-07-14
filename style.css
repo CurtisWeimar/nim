@@ -3,3 +3,34 @@ img {
     image-rendering: pixelated;
     width: 200px;
 }
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+title {
+    background-image: url(assets/Nim_Background.png);
+}
+
+.play_button {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    background-color: gray;
+    position: absolute;
+}
+
+.background_div {
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 0px;
+    margin: 0px;
+}
+
+.background{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
