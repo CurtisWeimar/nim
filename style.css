@@ -4,6 +4,11 @@ img {
     width: 200px;
 }
 
+@font-face {
+    font-family: minecraft;
+    src: url(MinecraftRegular-Bmg3.otf);
+}
+
 body{
     margin: 0px;
     padding: 0px;
@@ -15,29 +20,46 @@ body{
 }
 
 #title {
-    background-image: url(assets/dirt.png);
+    background-image: url(assets/Nim_Background.png);
     background-size: cover;
     background-repeat: no-repeat;
+
+    position: relative;
 }
 
-.play_button {
-    width: 50px;
-    height: 50px;
-    margin: auto;
-    /* background-color: gray; */
+#container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.button {
+    /* Color */
+    background-color: darkgrey;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(95, 95, 95);
+
+    /* Font */
+    color: white;
+    font-family: minecraft;
+    font-size: 80px;
+    text-align: center;
+}
+
+#play_button {
+    /* Position */
+    width: 500px;
+    height: 130px;
+    display: block;
+    transform: translate(100%, 200%);
     position: absolute;
 }
 
-.background_div {
+#rules_button {
+    width: 400px;
+    height: 90px;
+    display: inline-block;
     position: relative;
-    height: auto;
-    width: auto;
-    padding: 0px;
-    margin: 0px;
-}
-
-.background{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+    transform: translate(138%, 500%);
 }
