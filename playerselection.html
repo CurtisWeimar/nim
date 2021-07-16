@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head><link rel="stylesheet" href="playerSelection.css"></head>
+<body class="crisp_edges" id="title">
+    <style>
+
+        body{
+            overflow: hidden;
+        }
+    </style>
+    
+    <div class="background_div"></div>
+    <div class="centerContent">
+        <div class="backgroundName">
+            <div id="nameLabel">
+                <h1 id="label">Player Names</h1>          
+                <div class="form">
+                    <form id="playerNameFrm" autocomplete="off"  action="game.html" onsubmit="return validateForm()">
+                        Player 1 <br>
+                        <input type="text" name="p1name" id="p1name"><br>
+                        Player 2 <br>
+                         <input type="text" name="p2name" id="p2name"><br><br>
+                    </form> 
+                </div>
+            </div>
+        </div>
+        <div class="backgroundDiff">
+            <div id="diffLabel">    
+                <h1 id='label'>Difficulty</h1>
+                <div class="diffButtons">
+                    <button type="button" id="btnEasy">Easy</button>
+                    <button type="button" id="btnMedium">Medium</button>
+                    <button type="button" id="btnHard">Hard</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="centerBottom"> 
+        <input type="submit" value="Play" form="playerNameFrm" id="submitBtn">
+        <button onclick="window.location.href='index.html'" id="btnBack">Back</button>
+    </div>
+
+    <script src="playerSelection.js"></script>
+</body>
+</html> 
