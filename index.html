@@ -1,15 +1,52 @@
 <!DOCTYPE html>
 <html>
     <head><link rel="stylesheet" href="style.css"></head>
-<body class="crisp_edges" id="title">
+<body class="crisp_edges" id="background">
     
-    <div class="background_div">
-        <!-- <img class="background" src="assets/Nim_Background.png"> -->
+    <div id="title">
+        <div class="noselect" id="font">Game of Nim</div>
+    </div>
 
-        <a href="playerselection.html">
-            <div class="play_button"></div>
+    <div id="container">
+        <a class="aTag" href="playerselection.html" style="text-decoration: none;">
+            <div class="button" id="play_button"><div class="noselect">Play</div></div>
         </a>
 
+        <a class="aTag" style="text-decoration: none;">
+            <div class="button" id="rules_button" onclick="rulesShow(this)">
+                <div class="noselect">
+                    Rules
+                    <div class="modal" id="rules_modal">
+                        <div id="rules_modal_content">
+                            <p>
+                                Nim is a game where two players alternately take turns in taking redstone torches from several rows. 
+                                The only rule is that each player must take at least one torch on their turn, 
+                                but they may take more than one torch in a single turn, as long as they all come from the same row.
+                                The player who takes the last remaining torch on the entire board loses.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="button" id="credit_button" onclick="creditsShow(this)">
+        <div class="popup" id="credits">
+            <div class="noselect">Credits</div>
+            <div id="credits_modal" class="modal">
+                <div id="credits_modal_content">
+                    <!-- <span id="close" onclick="close()">&times;</span> -->
+                    <p>
+                        William Sunderland,
+                        Leonardo Contreras,
+                        Katherine Sanchez,
+                        and Curtis Weimar
+                    </p>
+                    <script src="popup.js"></script>
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>
