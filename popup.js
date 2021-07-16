@@ -24,7 +24,6 @@ function rulesShow(ev) {
 // }
 
 window.onclick = function(event) {
-    console.log(credits_modal.style.display);
     if (event.target != credits_modal && !creditsJustOpened) {
       credits_modal.style.display = "none";
     } else {

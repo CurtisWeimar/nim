@@ -24,10 +24,6 @@ body{
     image-rendering: pixelated;
 }
 
-#title {
-
-}
-
 #background {
     background-image: url(assets/Nim_Background.png);
     background-size: cover;
