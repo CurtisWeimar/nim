@@ -1,0 +1,189 @@
+@font-face {
+    font-family: 'minecraft';
+    src: url('assets/Minecraft-Regular.ttf')  format('truetype');
+  }
+
+
+html{
+    font-family: 'minecraft'; src: url(assets/Minecraft-Regular.ttf);
+}
+
+img {
+    image-rendering: -moz-crisp-edges;
+    image-rendering: pixelated;
+    width: 200px;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.crisp_edges {
+    image-rendering: -moz-crisp-edges;
+    image-rendering: pixelated;
+}
+
+#title {
+    background-image: url(assets/dirt.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.play_button {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    /* background-color: gray; */
+    position: absolute;
+}
+
+.background_div {
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 0px;
+    margin: 0px;
+}
+
+.background{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.centerContent {
+    user-select: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -400px;
+    color: white;
+    display: flex;
+  }
+#label{
+    font-size: 35px;
+}
+
+  #nameLabel{
+      text-align: center;
+  }
+
+  #diffLabel{
+      text-align: center;
+  }
+
+.backgroundName{
+    border-width: thick;
+    border-color: rgb(87, 87, 87);
+    border-style: solid;
+    margin-right: 50px;
+    background-color: gray;
+    width: 400px;
+    height: 350px;
+    background: rgb(153, 153, 153);
+    overflow: hidden;
+    filter: drop-shadow(0 2mm 1mm rgb(0, 0, 0));
+    /*Optional color for shadow: rgb(87, 87, 87) */
+}
+.backgroundName .form{
+    padding-top: 10px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    float: left;
+    margin-left: 15px;
+    font-size: 25px;
+      background-color: rgb(184, 184, 184);
+  }
+  input[type=text]{
+    font-family: 'minecraft'; src: url(assets/Minecraft-Regular.ttf);
+    margin: 20px;
+    font-size: 20px;
+  }
+
+  .backgroundDiff{
+    border-width: thick;
+    border-color: rgb(87, 87, 87);
+    border-style: solid;
+    margin-right: 50px;
+    background-color: gray;
+    width: 400px;
+    height: 350px;
+    background: rgb(153, 153, 153);
+    overflow: hidden;
+    filter: drop-shadow(0 2mm 1mm rgb(0, 0, 0));
+  }
+
+  .diffButtons button{
+      
+    user-select: none;
+    font-family: 'minecraft'; src: url(assets/Minecraft-Regular.ttf);
+    font-size: 30px;
+    padding: 10px 24px; 
+    margin-bottom: 10px;
+    margin-left: 10%;
+    cursor: pointer; 
+    color: white;
+    height: 75px;
+    width: 75%; 
+    display: block; 
+    background-color: rgb(206, 206, 206);
+  }
+
+  .diffButtons button:hover{
+      background-color: rgb(233, 233, 233);
+  }
+
+  .centerBottom{
+    position:relative;
+    left: 38%;
+    margin-top:40%;
+  }
+
+  #submitBtn{
+    cursor: pointer;
+    float: left;
+    font-family: 'minecraft'; src: url(assets/Minecraft-Regular.ttf);
+    color: white;
+    border-width: thick;
+    border-color: rgb(87, 87, 87);
+    border-style: solid;
+    font-size: 50px;
+    width: 400px;
+    height: 80px;
+    background-color: rgb(206, 206, 206);
+    filter: drop-shadow(0 2mm 1mm rgb(0, 0, 0));
+  }
+
+  #submitBtn:hover{
+    background-color: rgb(233, 233, 233);
+  }
+
+  #btnBack{
+      text-align: center;
+    font-family: 'minecraft'; src: url(assets/Minecraft-Regular.ttf);
+    color: white;
+    border-width: thick;
+    border-color: rgb(252, 76, 76);
+    border-style: solid;
+    cursor: pointer;
+    font-size: 40px;
+    margin-top: 15px;
+    margin-left: 30px;
+    width: 200px;
+    height: 50px;
+    user-select: none;
+    background-color: rgb(250, 120, 120);
+    filter: drop-shadow(0 2mm 1mm rgb(255, 0, 0));
+  }
+
+  #btnBack:hover{
+    background-color: rgb(250, 133, 133);
+  }
+
+  input{
+      width: 300px;
+      height: 30px;
+  }
