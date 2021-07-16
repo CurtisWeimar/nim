@@ -187,3 +187,63 @@ body{
       width: 300px;
       height: 30px;
   }
+
+  #btnQuit{
+    text-align: center;
+  font-family: 'minecraft'; src: url(assets/Minecraft-Regular.ttf);
+  color: white;
+  border-width: thick;
+  border-color: rgb(252, 76, 76);
+  border-style: solid;
+  cursor: pointer;
+  font-size: 40px;
+  margin-top: 15px;
+  margin-left: 475px;
+  width: 200px;
+  height: 50px;
+  user-select: none;
+  background-color: rgb(250, 120, 120);
+  filter: drop-shadow(0 2mm 1mm rgb(255, 0, 0));
+}
+
+#btnQuit:hover{
+  background-color: rgb(250, 133, 133);
+}
+
+  .gameBoard{
+      background-image: url(assets/stone.png);
+  }
+
+  .backgroundTurn{
+    border-width: thick;
+    border-color: rgb(87, 87, 87);
+    border-style: solid;
+    margin-left: 600px;
+    margin-top: 100px;
+    background-color: gray;
+    width: 400px;
+    height: 200px;
+    background: rgb(153, 153, 153);
+    overflow: hidden;
+    filter: drop-shadow(0 2mm 1mm rgb(0, 0, 0));
+  }
+
+  .turnButton button{
+      
+    user-select: none;
+    font-family: 'minecraft'; src: url(assets/Minecraft-Regular.ttf);
+    font-size: 30px;
+    padding: 10px 24px; 
+    margin-bottom: 10px;
+    margin-left: 10%;
+    cursor: pointer; 
+    color: white;
+    height: 75px;
+    width: 75%; 
+    display: block; 
+    background-color: rgb(206, 206, 206);
+  }
+
+  .turnButton button:hover{
+      background-color: rgb(233, 233, 233);
+  }

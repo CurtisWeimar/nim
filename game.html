@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="playerSelection.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body class="crisp_edges" id="title">
+    <style>
+        #title {
+            background-image: url(assets/Nim_Background.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        body{
+            overflow: hidden;
+        }
+    </style>
+
+<div class="centerContent">
+    <div class="gameBoard">
+        
+    </div>
+    <div class="backgroundTurn">
+        <div id="diffLabel">    
+            <h1 id='label'></h1>
+            <div class="turnButton">
+                <button type="button" id="btnEndTurn">End Turn</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="centerBottom"> 
+        <button onclick="window.location.href='index.html'" id="btnQuit">Quit</button>
+    </div>
     <script src="game.js"></script>
 </body>
 </html>
