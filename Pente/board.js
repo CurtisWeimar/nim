@@ -4,9 +4,15 @@ const cellElements = document.querySelectorAll('[data-cell]');
 const board = document.getElementById("board");
 let p2Turn;
 
-cellElements.forEach(cell=> {
-    cell.addEventListener('click', handleClick, { once: true})
-})
+startGame();
+
+function startGame(){
+    p2Turn = false;
+    cellElements.forEach(cell=> {
+        cell.addEventListener('click', handleClick, { once: true})
+    });
+    setBoardHoverClass()
+}
 
 function handleClick(evt) {
     //mark placement
