@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Pente</title>
 </head>
 <body>
     <div class="board x" id="board">
+        <!-- <img src="gravel.png"> -->
+        <div class="cell" data-cell></div><!--(0, 0)-->
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
@@ -26,6 +28,8 @@
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div> <!--(0, 18)-->
+        <div class="cell" data-cell></div> <!--(1, 0)-->
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
@@ -43,6 +47,8 @@
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div> <!--(1, 18)-->
+        <div class="cell" data-cell></div> <!--(2, 0)-->
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
@@ -60,6 +66,8 @@
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div> <!--(2, 18)-->
+        <div class="cell" data-cell></div> <!--(3, 0)-->
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
@@ -77,6 +85,8 @@
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div> <!--(3, 18)-->
+        <div class="cell" data-cell></div> <!--(4, 0)-->
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
@@ -94,6 +104,8 @@
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div> <!--(4, 18)-->
+        <div class="cell" data-cell></div> <!--(5, 0)-->
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
@@ -111,6 +123,8 @@
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div> <!--(5, 18)-->
+        <div class="cell" data-cell></div> <!--(6, 0)-->
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
@@ -128,6 +142,8 @@
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div> <!--(6, 18)-->
+        <div class="cell" data-cell></div> <!--(7, 0)-->
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
@@ -145,6 +161,8 @@
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div> <!--(7, 18)-->
+        <div class="cell" data-cell></div> <!--(8, 0)-->
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
@@ -162,6 +180,8 @@
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div> <!--(8, 18)-->
+        <div class="cell" data-cell></div> <!--(9, 0)-->
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
@@ -179,6 +199,8 @@
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div> <!--(9, 18)-->
+        <div class="cell" data-cell></div> <!--(10, 0)-->
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
@@ -196,6 +218,8 @@
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div> <!--(10, 18)-->
+        <div class="cell" data-cell></div> <!--(11, 0)-->
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
@@ -213,6 +237,8 @@
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div> <!--(11, 18)-->
+        <div class="cell" data-cell></div> <!--(12, 0)-->
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
@@ -230,6 +256,8 @@
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div> <!--(12, 18)-->
+        <div class="cell" data-cell></div> <!--(13, 0)-->
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
@@ -247,6 +275,8 @@
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div> <!--(13, 18)-->
+        <div class="cell" data-cell></div> <!--(14, 0)-->
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
@@ -264,6 +294,8 @@
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div> <!--(14, 18)-->
+        <div class="cell" data-cell></div> <!--(15, 0)-->
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
@@ -281,6 +313,8 @@
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div> <!--(15, 18)-->
+        <div class="cell" data-cell></div> <!--(16, 0)-->
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
@@ -298,6 +332,8 @@
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div> <!--(16, 18)-->
+        <div class="cell" data-cell></div> <!--(17, 0)-->
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
@@ -315,6 +351,8 @@
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div> <!--(17, 18)-->
+        <div class="cell" data-cell></div> <!--(18, 0)-->
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
@@ -332,44 +370,7 @@
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div> <!--(18, 18)-->
     </div>
 
     <div class="winning-message" id="winningMessage">
