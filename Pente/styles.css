@@ -4,13 +4,42 @@
 
 :root{
     --cell-size: 40px;
-    --mark-size: calc(var(--cell-size) * .5);
+    --mark-size: calc(var(--cell-size) * .8);
 }
 
+#background {
+    background-image: url(assets/Nim_Background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 
+    position: relative;
+}
 
 body{
     margin:0;
+}
+
+img {
+    image-rendering: -moz-crisp-edges;
+    image-rendering: pixelated;
+}
+
+.button {
+    /* Color */
+    background-color: darkgrey;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(95, 95, 95);
+
+    /* Font */
+    color: white;
+    font-family: minecraft;
+    font-size: 80px;
+    text-align: center;
+}
+
+.button:hover{
+    background-color: rgb(233, 233, 233);
 }
 
 .board{
@@ -25,15 +54,20 @@ body{
 }
 
 .cell{
+    image-rendering: -moz-crisp-edges;
+    image-rendering: pixelated;
     width: var(--cell-size);
     height: var(--cell-size);
-    border: 1px solid black;
+    border: 1px solid #505050;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     cursor: pointer;
+    background-image: url("gravel.png");
+    background-size: var(--cell-size);
 }
+
 /*
 .cell:first-child,
 .cell:nth-child(2),

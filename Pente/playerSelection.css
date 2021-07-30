@@ -30,12 +30,18 @@ body{
     background-repeat: no-repeat;
 }
 
-.play_button {
-    width: 50px;
-    height: 50px;
-    margin: auto;
-    /* background-color: gray; */
-    position: absolute;
+.play-button {
+  /* Color */
+  background-color: darkgrey;
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(95, 95, 95);
+
+  /* Font */
+  color: white;
+  font-family: minecraft;
+  font-size: 80px;
+  text-align: center;
 }
 
 .background_div {
