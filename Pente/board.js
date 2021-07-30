@@ -55,6 +55,7 @@ function handleClick(evt) {
     // console.log(x + ", " + y);
 
     //Check captures
+    //checkCaptures(x, y);
 
     //Check wins
 
@@ -194,7 +195,24 @@ function handleClick(evt) {
     setBoardHoverClass();
 }
 
+function checkCaptures(x, y) {
+    var checkPiece = boardArray[x][y]
 
+    console.log(`${checkPiece} at ${x}, ${y}`);
+    console.log(`Pieces above`);
+    var cell1 = y++;
+    console.log(`${boardArray[x][cell1]} at ${x}, ${cell1}`);
+    console.log(`${boardArray[x][y + 2]} at ${x}, ${y + 2}`);
+    console.log(`${boardArray[x][y + 3]} at ${x}, ${y + 3}`);
+
+    //Check if pieces above
+    if(boardArray[x][(y + 1)] != checkPiece && boardArray[x][y + 2] != checkPiece && boardArray[x][y + 3] == checkPiece) {
+        console.log("Fucked it up");
+        boardArray[x][y + 1] = null;
+        boardArray[x][y + 2] = null;
+        Documet.getElementById(`${x}-${y + 1}`).classList.remove("show");
+    }
+}
 
 function declareWin(checkPieces) {
     winningDiv.classList.add("show");
