@@ -1,0 +1,183 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+:root{
+    --cell-size: 40px;
+    --mark-size: calc(var(--cell-size) * .8);
+}
+
+body{
+    margin:0;
+    background-image: url(assets/Nim_Background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    position: relative;
+}
+
+img {
+    image-rendering: -moz-crisp-edges;
+    image-rendering: pixelated;
+    width: 200px;
+}
+
+.board{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(19, auto);
+}
+
+.cell{
+    image-rendering: -moz-crisp-edges;
+    image-rendering: pixelated;
+    width: var(--cell-size);
+    height: var(--cell-size);
+    border: 1px solid #505050;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    background-image: url("gravel.png");
+    background-size: var(--cell-size);
+
+}
+/*
+.cell:first-child,
+.cell:nth-child(2),
+.cell:nth-child(3),
+.cell:nth-child(4),
+.cell:nth-child(5),
+.cell:nth-child(6),
+.cell:nth-child(7),
+.cell:nth-child(8),
+.cell:nth-child(9),
+.cell:nth-child(10),
+.cell:nth-child(11),
+.cell:nth-child(12),
+.cell:nth-child(13),
+.cell:nth-child(14),
+.cell:nth-child(15),
+.cell:nth-child(16),
+.cell:nth-child(17),
+.cell:nth-child(18),
+.cell:nth-child(19)
+{
+    border-top:none;
+}
+
+.cell:nth-child(19n + 1)
+{
+    border-left: none;
+}
+
+.cell:nth-child(19n + 19){
+    border-right: none;
+}
+
+.cell:last-child,
+.cell:nth-child(360),
+.cell:nth-child(359),
+.cell:nth-child(358),
+.cell:nth-child(357),
+.cell:nth-child(356),
+.cell:nth-child(355),
+.cell:nth-child(354),
+.cell:nth-child(353),
+.cell:nth-child(352),
+.cell:nth-child(351),
+.cell:nth-child(350),
+.cell:nth-child(349),
+.cell:nth-child(348),
+.cell:nth-child(347),
+.cell:nth-child(346),
+.cell:nth-child(345),
+.cell:nth-child(344),
+.cell:nth-child(343)
+{
+    border-bottom: none;
+}
+*/
+
+.cell.x,
+.cell.jack{
+    cursor: not-allowed;
+}
+
+.board.x .cell:not(.x):not(.jack):hover::before,
+.board.x .cell:not(.x):not(.jack):hover::after
+{
+    opacity: 0.2;
+}
+
+.board.jack .cell:not(.x):not(.jack):hover::before,
+.board.jack .cell:not(.x):not(.jack):hover::after
+{
+    opacity: 0.2;
+}
+
+.cell.x::before,
+.cell.x::after,
+.board.x .cell:not(.x):not(.jack):hover::before,
+.board.x .cell:not(.x):not(.jack):hover::after
+{
+    content: '';
+    position: absolute;
+    width: calc(var(--mark-size) * 0.9);
+    height: var(--mark-size);
+    background-image: url('creeper_head.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.cell.jack::before,
+.cell.jack::after,
+.board.jack .cell:not(.x):not(.jack):hover::before,
+.board.jack .cell:not(.x):not(.jack):hover::after
+{
+    content: '';
+    position: absolute;
+    width: calc(var(--mark-size) * 0.9);
+    height: var(--mark-size);
+    background-image: url('jack_o_lantern.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.winning-message{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0, 0, 0, .9);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 5rem;
+}
+
+.winning-message button{
+    font-size: 3rem;
+    background-color: white;
+    border: 1px solid black;
+    padding: .25em .5em;
+    cursor:pointer;
+}
+
+.winning-message button:hover{
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+.winning-message.show{
+    display: flex;
+}
