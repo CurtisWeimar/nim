@@ -373,11 +373,20 @@
         <div class="cell" id="18-18" data-cell></div> <!--(18, 18)-->
     </div>
 
+    <div class="backgroundTurn">
+        <div id="diffLabel">    
+            <h1 id='label'></h1>
+            <img id="playerImage" src="creeper_head.png">
+            </div>
+        </div>
+    </div>
+
     <div class="winning-message" id="winningMessage">
-        <div data-winning-message-text></div>
-        <div class="button" id="restart">Play Again</div>
-        <div class="button" id="newPlayers">Play with New Players</div>
-        <div class="button" id="mainMenu">Back to Main Menu</div>
+        <h2 id='wintext'></h2>
+        
+        <div class="button" onclick="window.location.href='board.html'" id="restart">Play Again</div>
+        <div class="button" onclick="window.location.href='playerselection.html'" id="newPlayers">Play with New Players</div>
+        <div class="button" onclick="window.location.href='index.html'" id="mainMenu">Back to Main Menu</div>
     </div>
     <script src="board.js"></script>
 </body>

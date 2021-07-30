@@ -2,6 +2,16 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: minecraft;
+    src: url(MinecraftRegular-Bmg3.otf);
+}
+
+@font-face {
+    font-family: minecraft_bold;
+    src: url(MinecraftBold-nMK1.otf);
+}
+
 :root{
     --cell-size: 40px;
     --mark-size: calc(var(--cell-size) * .8);
@@ -36,15 +46,18 @@ img {
     font-family: minecraft;
     font-size: 80px;
     text-align: center;
+    user-select: none;
 }
 
 .button:hover{
     background-color: rgb(233, 233, 233);
+    cursor: pointer;
 }
 
 .board{
     width: 100vw;
     height: 100vh;
+    margin-left: -15%;
     display: grid;
     justify-content: center;
     align-content: center;
@@ -200,4 +213,38 @@ img {
 
 .winning-message.show{
     display: flex;
+}
+
+#wintext{
+    font-family: minecraft_bold;
+    src: url(MinecraftBold-nMK1.otf);
+    position: fixed;
+    float: left;
+    margin-top: -30%;
+    margin-left: 0%;
+}
+
+.backgroundTurn{
+    font-family: minecraft_bold;
+    src: url(MinecraftBold-nMK1.otf);
+    border-width: thick;
+    color: white;
+    border-color: rgb(87, 87, 87);
+    border-style: solid;
+    float: right;
+    margin-right: 7%;
+    margin-top: -30%;
+    background-color: gray;
+    width: 400px;
+    height: 200px;
+    background: rgb(153, 153, 153);
+    overflow: hidden;
+    filter: drop-shadow(0 2mm 1mm rgb(0, 0, 0));
+    text-align: center;
+    font-size: 150%;
+}
+
+#playerImage{
+    width: calc(var(--mark-size) * 1.5);
+    height: var(--mark-size * .2);
 }

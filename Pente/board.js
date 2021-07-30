@@ -3,7 +3,19 @@ const JACK_CLASS = 'jack'
 const cellElements = document.querySelectorAll('[data-cell]');
 const board = document.getElementById("board");
 const winningDiv = document.getElementById("winningMessage");
+let winnerText = document.getElementById('wintext')
+let p1nameData = sessionStorage.getItem("p1name");
+let p2nameData = sessionStorage.getItem("p2name");
+let turnLabel = document.getElementById('label');
+let playerImage = document.getElementById('playerImage');
 let p2Turn;
+
+let p2Image = 'jack_o_lantern.png';
+let p1Image = 'creeper_head.png';
+
+
+
+turnLabel.innerHTML = `${p1nameData}'s Turn`;
 
 //Board array
 let boardArray = new Array(19);
@@ -200,10 +212,10 @@ function handleClick(evt) {
 
 function declareWin(checkPieces) {
     winningDiv.classList.add("show");
-    if(checkPieces == 0) {
-        winningDiv.innerHTML("Player 1 wins");
+    if(p2Turn === true) {
+        winnerText.innerHTML = `${p2nameData} Wins!`;
     } else {
-        winningDiv.innerHTML("Player 2 wins");
+        winnerText.innerHTML = `${p1nameData} Wins!`;
     }
     
 }
@@ -214,6 +226,14 @@ function placeMark(cell, currentClass){
 
 function swapTurns() {
     p2Turn = !p2Turn;
+    if(p2Turn === true){
+        turnLabel.innerHTML = `${p2nameData}'s Turn`;
+        playerImage.src = p2Image;
+    }
+    else if(p2Turn === false){
+        turnLabel.innerHTML = `${p1nameData}'s Turn`;
+        playerImage.src = p1Image;
+    }
 }
 
 function setBoardHoverClass(){
@@ -225,8 +245,4 @@ function setBoardHoverClass(){
     else{
         board.classList.add(X_CLASS);
     }
-}
-
-function checkWin(currentClass){
-
 }
