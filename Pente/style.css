@@ -1,0 +1,175 @@
+img {
+    image-rendering: -moz-crisp-edges;
+    image-rendering: pixelated;
+    width: 200px;
+}
+
+@font-face {
+    font-family: minecraft;
+    src: url(MinecraftRegular-Bmg3.otf);
+}
+
+@font-face {
+    font-family: minecraft_bold;
+    src: url(MinecraftBold-nMK1.otf);
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.crisp_edges {
+    image-rendering: -moz-crisp-edges;
+    image-rendering: pixelated;
+}
+
+#background {
+    background-image: url(assets/Nim_Background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+#container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.button {
+    /* Color */
+    background-color: darkgrey;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(95, 95, 95);
+
+    /* Font */
+    color: white;
+    font-family: minecraft;
+    font-size: 80px;
+    text-align: center;
+}
+
+.button:hover{
+    background-color: rgb(233, 233, 233);
+}
+
+#font {
+    /* Font */
+    color: white;
+    font-family: minecraft_bold;
+    font-size: 200px;
+    font-style: bold;
+    text-align: center;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
+
+#credits {
+    width: 150px;
+    font-family: minecraft;
+    font-size: 30px;
+    text-align: center;
+}
+
+#play_button {
+    /* Position */
+    width: 500px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 13%;
+    margin-bottom: 5%;
+    /* transform: translate(100%, 200%); */
+}
+
+#rules_button {
+    width: 400px;
+    height: 90px;
+    display: flex;
+    margin-bottom: 80px;
+    justify-content: center;
+    /* transform: translate(50%, 50%); */
+}
+
+#credit_button {
+    display: flex;
+    width: 150px;
+    height: 60px;
+    background-color: gray;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: auto;
+}
+
+#credit_button:hover{
+    background-color: rgb(233, 233, 233);
+}
+
+#credits_container {
+    display: flex;
+    margin-top: auto;
+    width: 100%;
+}
+
+/* MODAL SHIT */
+
+ /* The Modal (background) */
+ .modal {
+    display: none; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    right: 150px;
+    bottom: 25px;
+    z-index: 1; /* Sit on top */
+    width: 700px; /* Full width */
+    height: auto; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  #close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: hotpink;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #rules_modal_content {
+      font-size: 30px;
+      padding-right: 2px;
+  }

@@ -36,6 +36,8 @@ function startGame(){
 function handleClick(evt) {
     //mark placement
     const cell = evt.target;
+    console.log(evt.target)
+    console.log(evt)
     const currentClass = p2Turn ? JACK_CLASS : X_CLASS;
     placeMark(cell, currentClass);
     
@@ -213,6 +215,7 @@ function placeMark(cell, currentClass){
 function swapTurns() {
     p2Turn = !p2Turn;
 }
+
 function setBoardHoverClass(){
     board.classList.remove(X_CLASS);
     board.classList.remove(JACK_CLASS);
@@ -222,4 +225,8 @@ function setBoardHoverClass(){
     else{
         board.classList.add(X_CLASS);
     }
+}
+
+function checkWin(currentClass){
+
 }
