@@ -1,16 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h2>This is a change</h2>
-    <h2>Leo in Branch</h2>
-    <!--
-        Hi I can commit to the branch
-    -->
+<html>
+    <head><link rel="stylesheet" href="style.css"></head>
+<body class="crisp_edges" id="background">
+    
+    <div id="title">
+        <div class="noselect" id="font">PenteCraft</div>
+    </div>
+
+    <div id="container">
+        <a class="aTag" href="playerselection.html" style="text-decoration: none;">
+            <div class="button" id="play_button"><div class="noselect">Play</div></div>
+        </a>
+
+        <a class="aTag" style="text-decoration: none;">
+            <div class="button" id="rules_button" onclick="rulesShow(this)">
+                <div class="noselect">
+                    Rules
+                    <div class="modal" id="rules_modal">
+                        <div id="rules_modal_content">
+                            <p>
+                                There are two ways to win PENTE. Win by getting five (or more) stones in a row, 
+                                either horizontally, vertically, or diagonally, with no empty points in between. 
+                                Or, win by capturing five (or more) pairs of your opponents' stones.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="button" id="credit_button" onclick="creditsShow(this)">
+        <div class="popup" id="credits">
+            <div class="noselect">Credits</div>
+            <div id="credits_modal" class="modal">
+                <div id="credits_modal_content">
+                    <!-- <span id="close" onclick="close()">&times;</span> -->
+                    <p>
+                        William Sunderland,
+                        Leonardo Contreras,
+                        Katherine Sanchez,
+                        and Curtis Weimar
+                    </p>
+                    <script src="popup.js"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
-</html>
+</html> 
